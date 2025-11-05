@@ -2,3 +2,5 @@ Future Improvements
 
 1. Detect commands and respond to commands from any channel in the discord that the bot has permission. 
 2. URGENT/SECURITY: Migrate ID's to .env asap. 
+3. URGENT/BUGFIXES: Initial Observation, when someone leaves the voice channel, time is added to their data.
+    3.1. TESTED: Leaving grants 40 minutes to your time before you leave the voice channel. 
