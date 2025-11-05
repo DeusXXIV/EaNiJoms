@@ -1,3 +1,4 @@
 Future Improvements
 
 1. Detect commands and respond to commands from any channel in the discord that the bot has permission. 
+2. URGENT/SECURITY: Migrate ID's to .env asap. 

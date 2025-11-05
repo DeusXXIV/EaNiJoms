@@ -224,6 +224,46 @@ async def sekyu(ctx):
 
     await ctx.send("\n".join(lines))
 
+# =========================================================
+# ✅ SINONGMAHALMO COMMAND
+# =========================================================
+@bot.command(name="SinongMahalMo")
+async def sinongmahalmo(ctx):
+    user = await bot.fetch_user(TARGET_USER_ID)
+    embed = discord.Embed(
+        title="💙 Sinong Mahal Mo?",
+        description=(
+            f"Syempre ang **pinakaloveable 💖**, **pinakajowable 😍**, "
+            f"at **pinakabluehair 💙** na si **G_DRAGON** **{user.name}**! ✨"
+        ),
+        color=discord.Color.from_rgb(255, 105, 180)
+    )
+    embed.set_footer(text="Certified ni Ea ni Joms 💙")
+    await ctx.send(embed=embed)
+
+
+# =========================================================
+# ✅ SINONGMAHALNIJOMS COMMAND
+# =========================================================
+@bot.command(name="SinongMahalNiJoms")
+async def sinongmahalnijoms(ctx):
+    target_user = await bot.fetch_user(TARGET_USER_ID)
+    pau_user = await bot.fetch_user(PAU_USER_ID)
+    bot_user = await bot.fetch_user(BOT_USER_ID)
+
+    embed = discord.Embed(
+        title="💞 Sinong Mahal Ni Joms?",
+        description=(
+            f"Ang pinakamamahal ni **{target_user.name}** ay si **{bot_user.name}**💙, "
+            f"at syempre, walang tatalo sa pagmamahal niya sakaniyang idol na si **{pau_user.name}**."
+            f"**Joms Loves you Both So Much** 😎✨"
+        ),
+        color=discord.Color.from_rgb(173, 216, 230)
+    )
+    embed.set_footer(text="Spread the love 💞 — Ea ni Joms Bot")
+    await ctx.send(embed=embed)
+
+
 
 # =========================================================
 # ✅ BLUEHAIR COMMAND
@@ -239,6 +279,18 @@ async def bluehair(ctx):
     embed.add_field(
         name="👮‍♂️ !Sekyu",
         value="Show the **All-Time Sekyu Leaderboards (Top 10)**.",
+        inline=False
+    )
+
+    embed.add_field(
+        name="💘 !SinongMahalMo",
+        value="Shows how much **Ea ni Joms** loves his favorite blue-haired idol 💙",
+        inline=False
+    )
+
+    embed.add_field(
+        name="💞 !SinongMahalNiJoms",
+        value="Reveals who **Ea ni Joms** truly loves and idolizes 💖",
         inline=False
     )
 
