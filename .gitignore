@@ -1,0 +1,43 @@
+# ---- Python ----
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.log
+*.tmp
+*.bak
+
+# ---- Virtual Environments ----
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ---- OS Files ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- IDE Files ----
+.vscode/
+.idea/
+*.swp
+
+# ---- Config / Secrets ----
+.env
+*.secret
+*.token
+*.key
+
+# ---- Data Files ----
+voice_data.json
+*.json.backup
+
+# ---- Misc ----
+logs/
+backup/
+test_output/
